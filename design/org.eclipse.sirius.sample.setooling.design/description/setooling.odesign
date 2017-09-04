@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="setooling" version="11.1.1.201610211630">
+  <ownedViewpoints name="SetoolModel">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="SetoolModel Diagram" domainClass="setooling.SetoolModel" enablePopupBars="true">
+      <validationSet name="RequirementValidation">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="CycleSuperSubRequirement" level="ERROR" message="aql:self.oclAsType(setooling::Requirement).superRequirement.name+' should not be both Super and Sub Requirementof '+self.oclAsType(setooling::Requirement).name" targetClass="setooling.Requirement">
+          <audits auditExpression="aql:self.subRequirement->excludes(self.superRequirement)"/>
+        </ownedRules>
+      </validationSet>
+      <defaultLayer name="Default">
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editDescription">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editRealizationConstraint">
+            <mask mask="{0}"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Requirement" activeByDefault="true">
+        <nodeMappings name="RequirementNode" labelDirectEdit="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editDescription']" semanticCandidatesExpression="feature:reqMs" domainClass="setooling.RequirementModel">
+          <style xsi:type="style:EllipseNodeDescription" showIcon="false" labelExpression="aql:'Req'+self.id+': '+self.description" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="IncludeEdge" deletionDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@toolSections.0/@ownedTools[name='unsetInclude']" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']" targetFinderExpression="feature:superRequirement" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@toolSections.0/@ownedTools[name='reconnectInculde']">
+          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createRequirement" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.RequirementModel" referenceName="reqMs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.reqMs->filter(setooling::RequirementModel)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" documentation="&#xD;&#xA;" name="setInclude" precondition="aql:preTarget.differs(preSource) and preSource.oclAsType(setooling::RequirementModel).superRequirement->excludes(preTarget)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="superRequirement" valueExpression="var:source"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:self.superRequirement.level+1"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="priority" valueExpression="aql:self.superRequirement.priority+0"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectInculde" forceRefresh="true">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="superRequirement" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:self.superRequirement.level+1"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="priority" valueExpression="aql:self.superRequirement.priority+0"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetInclude" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Unset" featureName="superRequirement"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+      <additionalLayers name="Function" activeByDefault="true">
+        <nodeMappings name="FunctionNode" labelDirectEdit="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editDescription']" semanticCandidatesExpression="feature:funBs" doubleClickDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='FunctionNodeDoubleClick']" domainClass="setooling.FunctionBlock">
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql: self.name+'.'+self.description" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AndNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_and">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="OrNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_or">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="NotNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_not">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="KillNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_kill">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="RealizationEdge" semanticCandidatesExpression="feature:allocation_rf" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']" targetFinderExpression="feature:requirement" sourceFinderExpression="feature:function" domainClass="setooling.Allocation_RF" useDomainElement="true" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectRealization']">
+          <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="DataflowEdge" semanticCandidatesExpression="feature:flows" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetFinderExpression="feature:flowTarget" sourceFinderExpression="feature:flowSource" domainClass="setooling.DataFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectDataflow']">
+          <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ControlflowEdge" labelDirectEdit="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editDescription']" semanticCandidatesExpression="feature:flows" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetFinderExpression="feature:flowTarget" sourceFinderExpression="feature:flowSource" domainClass="setooling.ControlFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectControlflow']">
+          <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="IncludeEdge_Fun_Test" deletionDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='unsetInclude_Fun']" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']" targetFinderExpression="feature:superFunction" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectInculde_Fun']">
+          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createFunction" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.FunctionBlock" referenceName="funBs">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:'0'"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.funBs->filter(setooling::FunctionBlock)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'F'+self.id"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAnd" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_and" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createOr" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_or" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createNot" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_not" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createKill" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_kill" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setRealization" precondition="aql:preTarget.differs(preSource)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Allocation_RF" referenceName="allocation_rf">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="function" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="requirement" valueExpression="var:target"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectRealization">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="requirement" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetRealization">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="FunctionNodeDoubleClick" mappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setDataflow" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.DataFlow" referenceName="flows">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="flowSource" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:source.eContainer().flows->filter(setooling::DataFlow)->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="data" valueExpression="aql:'Your data'"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectDataflow">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetDataflow">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setControlflow" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.ControlFlow" referenceName="flows"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:source.eContainer().flows->filter(setooling::ControlFlow)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="flowSource" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectControlflow">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetControlflow">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" documentation="&#xD;&#xA;" name="setInclude_Fun" precondition="aql:preTarget.differs(preSource) and preSource.oclAsType(setooling::FunctionBlock).superFunction->excludes(preTarget)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='IncludeEdge_Fun_Test']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="superFunction" valueExpression="var:source"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:self.superFunction.level+1"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectInculde_Fun" forceRefresh="true">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="superFunction" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:self.superFunction.level+1"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetInclude_Fun" forceRefresh="true">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Unset" featureName="superFunction"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="FunctionStructure Diagram" titleExpression="aql:'Structure of '+self.name" domainClass="setooling.FunctionBlock" enablePopupBars="true">
+      <metamodel href="http://www.eclipse.org/sirius/sample/basicfamilysetooling#/"/>
+      <diagramInitialisation>
+        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+          <subModelOperations xsi:type="tool_1:For" expression="aql:Sequence{self.flows}">
+            <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.FlowPort" referenceName="flowPorts" variableName="instanceFP">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:'1'"/>
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'P'+self.id"/>
+            </subModelOperations>
+          </subModelOperations>
+        </firstModelOperations>
+      </diagramInitialisation>
+      <defaultLayer name="Default">
+        <nodeMappings name="FlowPortNode" semanticCandidatesExpression="feature:flowPorts" domainClass="setooling.FlowPort">
+          <style xsi:type="style:DotDescription" labelSize="1" showIcon="false" labelAlignment="LEFT" sizeComputationExpression="2" resizeKind="NSEW" strokeSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+          </style>
+        </nodeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createFlowPort" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.FlowPort" referenceName="flowPorts">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.flowPorts->filter(setooling::FlowPort)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'P'+self.id"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Function" activeByDefault="true">
+        <nodeMappings name="FunctionNode" labelDirectEdit="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editDescription']" semanticCandidatesExpression="feature:subFunction" doubleClickDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='FunctionNodeDoubleClick']" domainClass="setooling.FunctionBlock">
+          <borderedNodeMappings name="FlowPortNode" domainClass="setooling.FlowPort">
+            <style xsi:type="style:DotDescription" labelSize="1" showIcon="false" labelAlignment="LEFT" sizeComputationExpression="1" resizeKind="NSEW" strokeSizeComputationExpression="4">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_purple']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql: self.name+'.'+self.description" sizeComputationExpression="8" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="AndNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_and">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="OrNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_or">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="NotNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_not">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="KillNode" semanticCandidatesExpression="feature:opers" domainClass="setooling.Op_kill">
+          <style xsi:type="style:LozengeNodeDescription" showIcon="false" labelExpression="feature:sign" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="DataflowEdge" semanticCandidatesExpression="feature:flows" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetFinderExpression="feature:flowTarget" sourceFinderExpression="feature:flowSource" domainClass="setooling.DataFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectDataflow']">
+          <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ControlflowEdge" labelDirectEdit="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editDescription']" semanticCandidatesExpression="feature:flows" sourceMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode'] //@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']" targetFinderExpression="feature:flowTarget" sourceFinderExpression="feature:flowSource" domainClass="setooling.ControlFlow" useDomainElement="true" reconnections="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@toolSections.0/@ownedTools[name='reconnectControlflow']">
+          <style targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createFunction" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.FunctionBlock" referenceName="subFunction">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:self.superFunction.level+1"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.subFunction->filter(setooling::FunctionBlock)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:self.superFunction.name+'.'+self.id"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createAnd" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_and" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createOr" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='OrNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_or" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createNot" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='NotNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_not" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createKill" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='KillNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.Op_kill" referenceName="opers"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="FunctionNodeDoubleClick" mappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setDataflow" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.DataFlow" referenceName="flows">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="flowSource" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:source.eContainer().flows->filter(setooling::DataFlow)->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="data" valueExpression="aql:'Your data'"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectDataflow">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetDataflow">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setControlflow" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.ControlFlow" referenceName="flows"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:source.eContainer().flows->filter(setooling::ControlFlow)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="flowSource" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectControlflow">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="flowTarget" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetControlflow">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Requirement table" domainClass="setooling.SetoolModel">
+      <metamodel href="http://www.eclipse.org/sirius/sample/basicfamilysetooling#/"/>
+      <ownedLineMappings name="RequirementLine" domainClass="setooling.RequirementModel" semanticCandidatesExpression="feature:reqMs" headerLabelExpression="aql:'Req'+self.id"/>
+      <ownedCreateLine name="createRequirementLine" forceRefresh="true" mapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']">
+        <variables name="root" documentation="The semantic root element of the table."/>
+        <variables name="element" documentation="The semantic currently edited element."/>
+        <variables name="container" documentation="The semantic element corresponding to the view container."/>
+        <firstModelOperation xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+          <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.RequirementModel" referenceName="reqMs">
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.reqMs->filter(setooling::RequirementModel)->size()"/>
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+          </subModelOperations>
+        </firstModelOperation>
+      </ownedCreateLine>
+      <ownedColumnMappings name="ReqType" headerLabelExpression="Type" featureName="type" labelExpression="aql:self.type"/>
+      <ownedColumnMappings name="ReqDescription" headerLabelExpression="Description" featureName="description" labelExpression="aql:self.description"/>
+      <ownedColumnMappings name="ReqPriority" headerLabelExpression="Priority" featureName="priority" labelExpression="aql:self.priority"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:CrossTableDescription" name="Validation_RF" domainClass="setooling.SetoolModel">
+      <metamodel href="http://www.eclipse.org/sirius/sample/basicfamilysetooling#/"/>
+      <ownedLineMappings name="RequirementLineV" reusedSubLines="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']" reusedInMappings="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']" domainClass="setooling.RequirementModel" semanticCandidatesExpression="feature:reqMs" headerLabelExpression="aql:'Req'+self.id"/>
+      <ownedCreateLine name="createRequirementLineV" forceRefresh="true" mapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']">
+        <variables name="root" documentation="The semantic root element of the table."/>
+        <variables name="element" documentation="The semantic currently edited element."/>
+        <variables name="container" documentation="The semantic element corresponding to the view container."/>
+        <firstModelOperation xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+          <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.RequirementModel" referenceName="reqMs">
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.reqMs->filter(setooling::RequirementModel)->size()"/>
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+          </subModelOperations>
+        </firstModelOperation>
+      </ownedCreateLine>
+      <ownedColumnMappings name="Function Column" headerLabelExpression="aql:self.name" domainClass="setooling.FunctionBlock" semanticCandidatesExpression="feature:funBs"/>
+      <intersection name="Realization Intersection" lineMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']" columnMapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0" labelExpression="   X" useDomainClass="true" columnFinderExpression="feature:function" lineFinderExpression="feature:requirement" semanticCandidatesExpression="feature:allocation_rf" domainClass="setooling.Allocation_RF">
+        <defaultForeground>
+          <labelFormat>bold</labelFormat>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+      </intersection>
+      <createColumn name="createFunctionColumn" mapping="//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0">
+        <variables name="root" documentation="The semantic root element of the table."/>
+        <variables name="element" documentation="The semantic currently edited element."/>
+        <variables name="container" documentation="The semantic element corresponding to the view container."/>
+        <firstModelOperation xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+          <subModelOperations xsi:type="tool_1:CreateInstance" typeName="setooling.FunctionBlock" referenceName="funBs">
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'F'+container.funBs->filter(setooling::FunctionBlock)->size()"/>
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql:'(description)'"/>
+            <subModelOperations xsi:type="tool_1:SetValue" featureName="level" valueExpression="aql:'0'"/>
+          </subModelOperations>
+        </firstModelOperation>
+      </createColumn>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.eclipse.sirius.sample.setooling.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

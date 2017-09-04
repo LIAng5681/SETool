@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate .
+ */]
+[module generate ('http://www.eclipse.org/sirius/sample/basicfamilysetooling')]
+
+
+[**
+ * The documentation of the template SetoolModel.
+ * @param aSetoolModel
+ */]
+[template public SetoolModel(aSetoolModel : SetoolModel)]
+[comment @main/]
+[file (aSetoolModel.name, false, 'UTF-8')]
+
+[/file]
+[/template]

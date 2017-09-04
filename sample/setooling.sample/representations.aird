@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:setooling="http://www.eclipse.org/sirius/sample/basicfamilysetooling" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_V6ZcMF0bEee-eNnr-HZxRQ" selectedViews="_i6AtQF0bEee-eNnr-HZxRQ" version="11.1.0.201608251200">
+    <semanticResources>My.setooling</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_i6AtQF0bEee-eNnr-HZxRQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_kOnIsF0bEee-eNnr-HZxRQ" name="new SetoolModel Diagram" representation="_kOnIsV0bEee-eNnr-HZxRQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']"/>
+        <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_tT_KEF0hEee4sdfytRmqvg" name="Structure of F1" representation="_tT_xIF0hEee4sdfytRmqvg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Function%20Structure%20Diagram']"/>
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_ef7bsF0oEeesG4tohYcUwg" name="new Requirement table" representation="_ef7bsV0oEeesG4tohYcUwg">
+        <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']"/>
+        <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_uQcrUF1uEeeUUaAtPRqBtA" name="new Validation_RF" representation="_uQcrUV1uEeeUUaAtPRqBtA">
+        <description xmi:type="description_2:CrossTableDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']"/>
+        <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VYZL8IzqEeeqNcLhRMPSsw" name="Structure of F4" representation="_VYZzAIzqEeeqNcLhRMPSsw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']"/>
+        <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_kOnIsV0bEee-eNnr-HZxRQ" name="new SetoolModel Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_kOnIsl0bEee-eNnr-HZxRQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_kOnIs10bEee-eNnr-HZxRQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_kOqMAF0bEee-eNnr-HZxRQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_kOqMAV0bEee-eNnr-HZxRQ" type="Sirius" element="_kOnIsV0bEee-eNnr-HZxRQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_K0VRQF0cEee-eNnr-HZxRQ" type="2001" element="_K0QYwF0cEee-eNnr-HZxRQ">
+          <children xmi:type="notation:Node" xmi:id="_K0VRQ10cEee-eNnr-HZxRQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_K0VRRF0cEee-eNnr-HZxRQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K0V4UF0cEee-eNnr-HZxRQ" type="3017" element="_K0Q_0F0cEee-eNnr-HZxRQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_K0V4UV0cEee-eNnr-HZxRQ" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K0V4Ul0cEee-eNnr-HZxRQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_K0VRQV0cEee-eNnr-HZxRQ" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K0VRQl0cEee-eNnr-HZxRQ" x="468" y="446" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_kA23QmY0Eee-WZxzZ6CKTw" type="2001" element="_j_BEMGY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_kA3eUGY0Eee-WZxzZ6CKTw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_kA3eUWY0Eee-WZxzZ6CKTw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kA7Is2Y0Eee-WZxzZ6CKTw" type="3003" element="_j_BEMWY0Eee-WZxzZ6CKTw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_kA7ItGY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA7ItWY0Eee-WZxzZ6CKTw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_kA23Q2Y0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA23RGY0Eee-WZxzZ6CKTw" x="12" y="361" width="134" height="86"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_kA4FYGY0Eee-WZxzZ6CKTw" type="2001" element="_j_BrQGY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_kA4FY2Y0Eee-WZxzZ6CKTw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_kA4FZGY0Eee-WZxzZ6CKTw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kA7ItmY0Eee-WZxzZ6CKTw" type="3003" element="_j_BrQWY0Eee-WZxzZ6CKTw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_kA7It2Y0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA7IuGY0Eee-WZxzZ6CKTw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_kA4FYWY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA4FYmY0Eee-WZxzZ6CKTw" x="270" y="360" width="146" height="87"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_kA4scGY0Eee-WZxzZ6CKTw" type="2001" element="_j_BrQmY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_kA4sc2Y0Eee-WZxzZ6CKTw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_kA4sdGY0Eee-WZxzZ6CKTw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kA7vwGY0Eee-WZxzZ6CKTw" type="3003" element="_j_CSUGY0Eee-WZxzZ6CKTw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_kA7vwWY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA7vwmY0Eee-WZxzZ6CKTw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_kA4scWY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kA4scmY0Eee-WZxzZ6CKTw" x="276" y="503" width="134" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_yO7fgGY0Eee-WZxzZ6CKTw" type="2001" element="_yNgjMGY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_yO8GkGY0Eee-WZxzZ6CKTw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_yO8GkWY0Eee-WZxzZ6CKTw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yO8toGY0Eee-WZxzZ6CKTw" type="3003" element="_yNgjMWY0Eee-WZxzZ6CKTw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_yO8toWY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yO8tomY0Eee-WZxzZ6CKTw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_yO7fgWY0Eee-WZxzZ6CKTw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yO7fgmY0Eee-WZxzZ6CKTw" x="780" y="403" width="145" height="85"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pohE8IzkEeeqNcLhRMPSsw" type="2001" element="_pmkkMIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_pol9cIzkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pol9cYzkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pordAIzkEeeqNcLhRMPSsw" type="3016" element="_pn1IcIzkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pordAYzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pordAozkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pohE8YzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pohE8ozkEeeqNcLhRMPSsw" x="6" y="138" width="158" height="104"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_popAwIzkEeeqNcLhRMPSsw" type="2001" element="_pn2WkIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_popAw4zkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_popAxIzkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pordA4zkEeeqNcLhRMPSsw" type="3016" element="_pn2WkYzkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pordBIzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pordBYzkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_popAwYzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_popAwozkEeeqNcLhRMPSsw" x="217" y="150" width="174" height="92"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_popn0IzkEeeqNcLhRMPSsw" type="2001" element="_pn29oIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_popn04zkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_popn1IzkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_posEEIzkEeeqNcLhRMPSsw" type="3016" element="_pn29oYzkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_posEEYzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_posEEozkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_popn0YzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_popn0ozkEeeqNcLhRMPSsw" x="456" y="120" width="187" height="86"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_popn1YzkEeeqNcLhRMPSsw" type="2001" element="_pn29oozkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_poqO4IzkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_poqO4YzkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_posEE4zkEeeqNcLhRMPSsw" type="3016" element="_pn29o4zkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_posEFIzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_posEFYzkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_popn1ozkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_popn14zkEeeqNcLhRMPSsw" x="217" y="12" width="199" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_poqO4ozkEeeqNcLhRMPSsw" type="2001" element="_pn3ksIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_poqO5YzkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_poqO5ozkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_posEFozkEeeqNcLhRMPSsw" type="3016" element="_pn3ksYzkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_posEF4zkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_posEGIzkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_poqO44zkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_poqO5IzkEeeqNcLhRMPSsw" x="534" y="12" width="127" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_poq18IzkEeeqNcLhRMPSsw" type="2001" element="_pn3ksozkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_poq184zkEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_poq19IzkEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_posrIIzkEeeqNcLhRMPSsw" type="3016" element="_pn3ks4zkEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_posrIYzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_posrIozkEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_poq18YzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_poq18ozkEeeqNcLhRMPSsw" x="492" y="241" width="121" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7fjtEIzmEeeqNcLhRMPSsw" type="2001" element="_7ffboIzmEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_7fjtE4zmEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7fjtFIzmEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7fk7MIzmEeeqNcLhRMPSsw" type="3003" element="_7ffboYzmEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_7fk7MYzmEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7fk7MozmEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_7fjtEYzmEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7fjtEozmEeeqNcLhRMPSsw" x="582" y="418" width="115" height="78"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2mYa0IzqEeeqNcLhRMPSsw" type="2001" element="_2mVXgIzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_2mYa04zqEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2mYa1IzqEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2mZB4IzqEeeqNcLhRMPSsw" type="3016" element="_2mVXgYzqEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_2mZB4YzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2mZB4ozqEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_2mYa0YzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2mYa0ozqEeeqNcLhRMPSsw" x="756" y="147" width="175" height="85"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_kOqMAl0bEee-eNnr-HZxRQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_1QYPkGY6Eeev2IiHTLZr5g" type="4001" element="_1QEGgGY6Eeev2IiHTLZr5g" source="_kA23QmY0Eee-WZxzZ6CKTw" target="_kA4FYGY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_1QY2oGY6Eeev2IiHTLZr5g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1QY2oWY6Eeev2IiHTLZr5g" x="40" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1QY2omY6Eeev2IiHTLZr5g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1QY2o2Y6Eeev2IiHTLZr5g" x="33" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1QZdsGY6Eeev2IiHTLZr5g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1QZdsWY6Eeev2IiHTLZr5g" x="14" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_1QYPkWY6Eeev2IiHTLZr5g"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1QYPkmY6Eeev2IiHTLZr5g" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1QYPk2Y6Eeev2IiHTLZr5g" points="[0, 0, -124, 6]$[124, -6, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1QZdsmY6Eeev2IiHTLZr5g" id="(1.0,0.27906976744186046)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1QZds2Y6Eeev2IiHTLZr5g" id="(0.0,0.21839080459770116)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ppANIIzkEeeqNcLhRMPSsw" type="4001" element="_pn-5cIzkEeeqNcLhRMPSsw" source="_popAwIzkEeeqNcLhRMPSsw" target="_pohE8IzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ppA0MIzkEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppA0MYzkEeeqNcLhRMPSsw" x="-51"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppBbQIzkEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppBbQYzkEeeqNcLhRMPSsw" x="-23" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppBbQozkEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppBbQ4zkEeeqNcLhRMPSsw" x="-51" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ppANIYzkEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ppANIozkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ppANI4zkEeeqNcLhRMPSsw" points="[-6, -1, 118, 0]$[-107, -1, 17, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppLzUIzkEeeqNcLhRMPSsw" id="(0.034482758620689655,0.4673913043478261)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppLzUYzkEeeqNcLhRMPSsw" id="(0.5886075949367089,0.5192307692307692)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ppMaYIzkEeeqNcLhRMPSsw" type="4001" element="_poAHkIzkEeeqNcLhRMPSsw" source="_popn0IzkEeeqNcLhRMPSsw" target="_popAwIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ppMaZIzkEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppMaZYzkEeeqNcLhRMPSsw" x="-210" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppMaZozkEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppMaZ4zkEeeqNcLhRMPSsw" x="66" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppMaaIzkEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppMaaYzkEeeqNcLhRMPSsw" x="118" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ppMaYYzkEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ppMaYozkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ppMaY4zkEeeqNcLhRMPSsw" points="[0, -1, 69, -24]$[-65, 21, 4, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppNBcIzkEeeqNcLhRMPSsw" id="(0.0,0.4883720930232558)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppNBcYzkEeeqNcLhRMPSsw" id="(0.9770114942528736,0.3804347826086957)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ppNBcozkEeeqNcLhRMPSsw" type="4001" element="_poAHk4zkEeeqNcLhRMPSsw" source="_poqO4ozkEeeqNcLhRMPSsw" target="_popn1YzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ppNBdozkEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNBd4zkEeeqNcLhRMPSsw" x="37" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppNBeIzkEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNBeYzkEeeqNcLhRMPSsw" x="-12" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppNBeozkEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNBe4zkEeeqNcLhRMPSsw" x="-11" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ppNBc4zkEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ppNBdIzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ppNBdYzkEeeqNcLhRMPSsw" points="[0, 0, 244, -7]$[-118, 7, 126, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppNogIzkEeeqNcLhRMPSsw" id="(0.0,0.45)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppNogYzkEeeqNcLhRMPSsw" id="(0.36683417085427134,0.5375)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ppNogozkEeeqNcLhRMPSsw" type="4001" element="_poAHlozkEeeqNcLhRMPSsw" source="_poq18IzkEeeqNcLhRMPSsw" target="_popAwIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ppNohozkEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNoh4zkEeeqNcLhRMPSsw" x="6" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppNoiIzkEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNoiYzkEeeqNcLhRMPSsw" x="32" y="16"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ppNoiozkEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ppNoi4zkEeeqNcLhRMPSsw" x="29" y="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ppNog4zkEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ppNohIzkEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ppNohYzkEeeqNcLhRMPSsw" points="[-3, -3, 104, 69]$[-104, -70, 3, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ppNojIzkEeeqNcLhRMPSsw" id="(0.024793388429752067,0.3875)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v2e7sIznEeeqNcLhRMPSsw" id="(0.9827586206896551,0.5434782608695652)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_K-7vsIzoEeeqNcLhRMPSsw" type="4001" element="_K-56gIzoEeeqNcLhRMPSsw" source="_popn1YzkEeeqNcLhRMPSsw" target="_pohE8IzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_K-7vtIzoEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K-7vtYzoEeeqNcLhRMPSsw" x="3" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K-8WwIzoEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K-8WwYzoEeeqNcLhRMPSsw" x="-1" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K-8WwozoEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K-8Ww4zoEeeqNcLhRMPSsw" x="2" y="12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_K-7vsYzoEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_K-7vsozoEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K-7vs4zoEeeqNcLhRMPSsw" points="[-2, 1, 138, -95]$[-134, 90, 6, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K-8WxIzoEeeqNcLhRMPSsw" id="(0.010050251256281407,0.45)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K-8WxYzoEeeqNcLhRMPSsw" id="(0.4620253164556962,0.057692307692307696)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_3ci4sIzoEeeqNcLhRMPSsw" type="4001" element="_3ccLAIzoEeeqNcLhRMPSsw" source="_kA23QmY0Eee-WZxzZ6CKTw" target="_popAwIzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_3cjfwIzoEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cjfwYzoEeeqNcLhRMPSsw" x="-4" y="-12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3cjfwozoEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cjfw4zoEeeqNcLhRMPSsw" x="2" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_3cjfxIzoEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3cjfxYzoEeeqNcLhRMPSsw" x="4" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3ci4sYzoEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3ci4sozoEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3ci4s4zoEeeqNcLhRMPSsw" points="[0, 0, -192, 119]$[192, -119, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3cjfxozoEeeqNcLhRMPSsw" id="(0.5373134328358209,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3cjfx4zoEeeqNcLhRMPSsw" id="(0.3390804597701149,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_A_KecIzpEeeqNcLhRMPSsw" type="4001" element="_8B-ywIzoEeeqNcLhRMPSsw" source="_kA4FYGY0Eee-WZxzZ6CKTw" target="_poq18IzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_A_LFgIzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A_LFgYzpEeeqNcLhRMPSsw" x="-15" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A_LFgozpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A_LFg4zpEeeqNcLhRMPSsw" x="21" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A_LFhIzpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A_LFhYzpEeeqNcLhRMPSsw" x="8" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_A_KecYzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_A_KecozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A_Kec4zpEeeqNcLhRMPSsw" points="[0, 0, -203, 41]$[192, -39, -11, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A_LFhozpEeeqNcLhRMPSsw" id="(0.547945205479452,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A_LFh4zpEeeqNcLhRMPSsw" id="(0.5041322314049587,0.975)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vtlMcIzpEeeqNcLhRMPSsw" type="4001" element="_vtiJIIzpEeeqNcLhRMPSsw" source="_kA4scGY0Eee-WZxzZ6CKTw" target="_K0VRQF0cEee-eNnr-HZxRQ">
+          <children xmi:type="notation:Node" xmi:id="_vtlzgIzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vtlzgYzpEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vtlzgozpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vtlzg4zpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vtlzhIzpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vtlzhYzpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vtlMcYzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vtlMcozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vtlMc4zpEeeqNcLhRMPSsw" points="[0, 0, -58, 60]$[58, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vtlzhozpEeeqNcLhRMPSsw" id="(1.0,0.325)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vtlzh4zpEeeqNcLhRMPSsw" id="(0.0,0.46)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wJu88IzpEeeqNcLhRMPSsw" type="4001" element="_wJr5oIzpEeeqNcLhRMPSsw" source="_kA4FYGY0Eee-WZxzZ6CKTw" target="_K0VRQF0cEee-eNnr-HZxRQ">
+          <children xmi:type="notation:Node" xmi:id="_wJvkAIzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wJvkAYzpEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wJvkAozpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wJvkA4zpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wJvkBIzpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wJvkBYzpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wJu88YzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wJu88ozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wJu884zpEeeqNcLhRMPSsw" points="[0, 0, -52, -36]$[52, 36, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wJvkBozpEeeqNcLhRMPSsw" id="(1.0,0.7701149425287356)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wJvkB4zpEeeqNcLhRMPSsw" id="(0.0,0.34)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wqx0gIzpEeeqNcLhRMPSsw" type="4001" element="_wquKIIzpEeeqNcLhRMPSsw" source="_K0VRQF0cEee-eNnr-HZxRQ" target="_7fjtEIzmEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_wqx0hIzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wqx0hYzpEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wqx0hozpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wqx0h4zpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wqx0iIzpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wqx0iYzpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wqx0gYzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wqx0gozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wqx0g4zpEeeqNcLhRMPSsw" points="[0, 0, -64, 0]$[64, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wqx0iozpEeeqNcLhRMPSsw" id="(1.0,0.34)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wqx0i4zpEeeqNcLhRMPSsw" id="(0.0,0.5769230769230769)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_x8U78IzpEeeqNcLhRMPSsw" type="4001" element="_x8R4oIzpEeeqNcLhRMPSsw" source="_7fjtEIzmEeeqNcLhRMPSsw" target="_yO7fgGY0Eee-WZxzZ6CKTw">
+          <children xmi:type="notation:Node" xmi:id="_x8U79IzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8U79YzpEeeqNcLhRMPSsw" x="-11" y="-14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8U79ozpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8U794zpEeeqNcLhRMPSsw" x="5" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x8U7-IzpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x8U7-YzpEeeqNcLhRMPSsw" x="2" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_x8U78YzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_x8U78ozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x8U784zpEeeqNcLhRMPSsw" points="[0, 0, -83, -3]$[83, 3, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8U7-ozpEeeqNcLhRMPSsw" id="(1.0,0.2692307692307692)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x8U7-4zpEeeqNcLhRMPSsw" id="(0.0,0.4588235294117647)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zU54cIzpEeeqNcLhRMPSsw" type="4001" element="_zU3cMIzpEeeqNcLhRMPSsw" source="_kA4FYGY0Eee-WZxzZ6CKTw" target="_7fjtEIzmEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_zU54dIzpEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zU54dYzpEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zU6fgIzpEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zU6fgYzpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zU6fgozpEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zU6fg4zpEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zU54cYzpEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zU54cozpEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zU54c4zpEeeqNcLhRMPSsw" points="[0, 0, -166, -60]$[166, 60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU6fhIzpEeeqNcLhRMPSsw" id="(1.0,0.21839080459770116)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zU6fhYzpEeeqNcLhRMPSsw" id="(0.0,0.2692307692307692)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_FHpE0IzrEeeqNcLhRMPSsw" type="4001" element="_FHlacIzrEeeqNcLhRMPSsw" source="_yO7fgGY0Eee-WZxzZ6CKTw" target="_2mYa0IzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_FHpE1IzrEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FHpE1YzrEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FHpE1ozrEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FHpE14zrEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FHpE2IzrEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FHpE2YzrEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_FHpE0YzrEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_FHpE0ozrEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FHpE04zrEeeqNcLhRMPSsw" points="[0, 0, 0, 171]$[0, -171, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FHpE2ozrEeeqNcLhRMPSsw" id="(0.5379310344827586,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FHpE24zrEeeqNcLhRMPSsw" id="(0.5828571428571429,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_RBGmIIzrEeeqNcLhRMPSsw" type="4001" element="_RA6Y4IzrEeeqNcLhRMPSsw" source="_kA4scGY0Eee-WZxzZ6CKTw" target="_pohE8IzkEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_RBHNMIzrEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RBHNMYzrEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_RBHNMozrEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RBHNM4zrEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_RBHNNIzrEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RBHNNYzrEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_RBGmIYzrEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_RBGmIozrEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RBGmI4zrEeeqNcLhRMPSsw" points="[0, 0, 168, 286]$[-168, -286, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RBHNNozrEeeqNcLhRMPSsw" id="(0.0,0.3125)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RBHNN4zrEeeqNcLhRMPSsw" id="(0.6455696202531646,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_K0QYwF0cEee-eNnr-HZxRQ" name="&amp;" outgoingEdges="_wquKIIzpEeeqNcLhRMPSsw" incomingEdges="_vtiJIIzpEeeqNcLhRMPSsw _wJr5oIzpEeeqNcLhRMPSsw" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="setooling:Op_and" href="My.setooling#//@opers.0"/>
+      <semanticElements xmi:type="setooling:Op_and" href="My.setooling#//@opers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_K0Q_0F0cEee-eNnr-HZxRQ" showIcon="false" labelPosition="node" color="138,226,52">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='AndNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_j_BEMGY0Eee-WZxzZ6CKTw" name="F1.Mesurer le taux de remplissage par capteurs" outgoingEdges="_1QEGgGY6Eeev2IiHTLZr5g _3ccLAIzoEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.0"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_j_BEMWY0Eee-WZxzZ6CKTw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_j_BrQGY0Eee-WZxzZ6CKTw" name="F2.Transmettre les informations vers une antenne puis un serveur" outgoingEdges="_8B-ywIzoEeeqNcLhRMPSsw _wJr5oIzpEeeqNcLhRMPSsw _zU3cMIzpEeeqNcLhRMPSsw" incomingEdges="_1QEGgGY6Eeev2IiHTLZr5g" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.1"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_j_BrQWY0Eee-WZxzZ6CKTw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_j_BrQmY0Eee-WZxzZ6CKTw" name="F3.Transmettre les ID infos sur capteurs" outgoingEdges="_vtiJIIzpEeeqNcLhRMPSsw _RA6Y4IzrEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.2"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_j_CSUGY0Eee-WZxzZ6CKTw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_yNgjMGY0Eee-WZxzZ6CKTw" name="F4.Afficher les informations" outgoingEdges="_FHlacIzrEeeqNcLhRMPSsw" incomingEdges="_x8R4oIzpEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_yNgjMWY0Eee-WZxzZ6CKTw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_7ffboIzmEeeqNcLhRMPSsw" name="F5.Traiter les informations " outgoingEdges="_x8R4oIzpEeeqNcLhRMPSsw" incomingEdges="_wquKIIzpEeeqNcLhRMPSsw _zU3cMIzpEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.4"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_7ffboYzmEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_1QEGgGY6Eeev2IiHTLZr5g" sourceNode="_j_BEMGY0Eee-WZxzZ6CKTw" targetNode="_j_BrQGY0Eee-WZxzZ6CKTw">
+      <target xmi:type="setooling:DataFlow" href="My.setooling#15"/>
+      <semanticElements xmi:type="setooling:DataFlow" href="My.setooling#15"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_1QEtkGY6Eeev2IiHTLZr5g" targetArrow="InputFillClosedArrow" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_1QEtkWY6Eeev2IiHTLZr5g"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pmkkMIzkEeeqNcLhRMPSsw" name="Req1: Il faut savoir les informations sur les poubelles collectives" incomingEdges="_pn-5cIzkEeeqNcLhRMPSsw _K-56gIzoEeeqNcLhRMPSsw _RA6Y4IzrEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn1IcIzkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pn2WkIzkEeeqNcLhRMPSsw" name="Req2:  Il faut savoir les taux de remplissage dans les poubelles collectives " outgoingEdges="_pn-5cIzkEeeqNcLhRMPSsw" incomingEdges="_poAHkIzkEeeqNcLhRMPSsw _poAHlozkEeeqNcLhRMPSsw _3ccLAIzoEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn2WkYzkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pn29oIzkEeeqNcLhRMPSsw" name="Req3:  les poubelles collectives sont dans la zone de surveillance" outgoingEdges="_poAHkIzkEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn29oYzkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pn29oozkEeeqNcLhRMPSsw" name="Req4: Il faut  transférer des données sous faible consommation d'énergie" outgoingEdges="_K-56gIzoEeeqNcLhRMPSsw" incomingEdges="_poAHk4zkEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn29o4zkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pn3ksIzkEeeqNcLhRMPSsw" name="Req5: On peut utiliser IoT" outgoingEdges="_poAHk4zkEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn3ksYzkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_pn3ksozkEeeqNcLhRMPSsw" name="Req6: On peut utiliser RPi" outgoingEdges="_poAHlozkEeeqNcLhRMPSsw" incomingEdges="_8B-ywIzoEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_pn3ks4zkEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2mVXgIzqEeeqNcLhRMPSsw" name="Req7: il a besoin de un site pour afficher les Résultats" incomingEdges="_FHlacIzrEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#7"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_2mVXgYzqEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_pn-5cIzkEeeqNcLhRMPSsw" sourceNode="_pn2WkIzkEeeqNcLhRMPSsw" targetNode="_pmkkMIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_pn_ggIzkEeeqNcLhRMPSsw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_pn_ggYzkEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_poAHkIzkEeeqNcLhRMPSsw" sourceNode="_pn29oIzkEeeqNcLhRMPSsw" targetNode="_pn2WkIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_poAHkYzkEeeqNcLhRMPSsw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_poAHkozkEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_poAHk4zkEeeqNcLhRMPSsw" sourceNode="_pn3ksIzkEeeqNcLhRMPSsw" targetNode="_pn29oozkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_poAHlIzkEeeqNcLhRMPSsw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_poAHlYzkEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_poAHlozkEeeqNcLhRMPSsw" sourceNode="_pn3ksozkEeeqNcLhRMPSsw" targetNode="_pn2WkIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_poAuoIzkEeeqNcLhRMPSsw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_poAuoYzkEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_K-56gIzoEeeqNcLhRMPSsw" sourceNode="_pn29oozkEeeqNcLhRMPSsw" targetNode="_pmkkMIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K-6hkIzoEeeqNcLhRMPSsw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K-6hkYzoEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']/@edgeMappings[name='IncludeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_3ccLAIzoEeeqNcLhRMPSsw" sourceNode="_j_BEMGY0Eee-WZxzZ6CKTw" targetNode="_pn2WkIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.2"/>
+      <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_3ccLAYzoEeeqNcLhRMPSsw" targetArrow="InputClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_3ccLAozoEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_8B-ywIzoEeeqNcLhRMPSsw" sourceNode="_j_BrQGY0Eee-WZxzZ6CKTw" targetNode="_pn3ksozkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.3"/>
+      <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_8B-ywYzoEeeqNcLhRMPSsw" targetArrow="InputClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_8B-ywozoEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vtiJIIzpEeeqNcLhRMPSsw" sourceNode="_j_BrQmY0Eee-WZxzZ6CKTw" targetNode="_K0QYwF0cEee-eNnr-HZxRQ">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#12"/>
+      <semanticElements xmi:type="setooling:ControlFlow" href="My.setooling#12"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vtiJIYzpEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="224,133,3">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vtiJIozpEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_wJr5oIzpEeeqNcLhRMPSsw" sourceNode="_j_BrQGY0Eee-WZxzZ6CKTw" targetNode="_K0QYwF0cEee-eNnr-HZxRQ">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#13"/>
+      <semanticElements xmi:type="setooling:ControlFlow" href="My.setooling#13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_wJsgsIzpEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="224,133,3">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_wJsgsYzpEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_wquKIIzpEeeqNcLhRMPSsw" sourceNode="_K0QYwF0cEee-eNnr-HZxRQ" targetNode="_7ffboIzmEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#14"/>
+      <semanticElements xmi:type="setooling:ControlFlow" href="My.setooling#14"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_wquKIYzpEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="224,133,3">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_wquKIozpEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='ControlflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_x8R4oIzpEeeqNcLhRMPSsw" sourceNode="_7ffboIzmEeeqNcLhRMPSsw" targetNode="_yNgjMGY0Eee-WZxzZ6CKTw">
+      <target xmi:type="setooling:DataFlow" href="My.setooling#13"/>
+      <semanticElements xmi:type="setooling:DataFlow" href="My.setooling#13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_x8R4oYzpEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_x8R4oozpEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zU3cMIzpEeeqNcLhRMPSsw" sourceNode="_j_BrQGY0Eee-WZxzZ6CKTw" targetNode="_7ffboIzmEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:DataFlow" href="My.setooling#15"/>
+      <semanticElements xmi:type="setooling:DataFlow" href="My.setooling#15"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zU3cMYzpEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zU3cMozpEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_FHlacIzrEeeqNcLhRMPSsw" sourceNode="_yNgjMGY0Eee-WZxzZ6CKTw" targetNode="_2mVXgIzqEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.4"/>
+      <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_FHlacYzrEeeqNcLhRMPSsw" targetArrow="InputClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_FHlacozrEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_RA6Y4IzrEeeqNcLhRMPSsw" sourceNode="_j_BrQmY0Eee-WZxzZ6CKTw" targetNode="_pmkkMIzkEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.5"/>
+      <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_RA6Y4YzrEeeqNcLhRMPSsw" targetArrow="InputClosedArrow" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_RA6Y4ozrEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='RealizationEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_kOnItF0bEee-eNnr-HZxRQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Requirement']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='SetoolModel%20Diagram']/@additionalLayers[name='Function']"/>
+    <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_tT_xIF0hEee4sdfytRmqvg" name="Structure of F1">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_tT_xIV0hEee4sdfytRmqvg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_tT_xIl0hEee4sdfytRmqvg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_tT_xKl0hEee4sdfytRmqvg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_tT_xK10hEee4sdfytRmqvg" type="Sirius" element="_tT_xIF0hEee4sdfytRmqvg" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_tT_xLF0hEee4sdfytRmqvg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Function%20Structure%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_tT_xKV0hEee4sdfytRmqvg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Function%20Structure%20Diagram']/@defaultLayer"/>
+    <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+  </diagram:DSemanticDiagram>
+  <table:DTable xmi:id="_ef7bsV0oEeesG4tohYcUwg" name="new Requirement table" headerColumnWidth="83">
+    <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+    <lines xmi:type="table:DLine" xmi:id="_lIBMQGY3Eeeyb5KLcG1AgA" label="Req1">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lICaYGY3Eeeyb5KLcG1AgA" label="service" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBcGY3Eeeyb5KLcG1AgA" label="aaaaaaaaa111" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBcWY3Eeeyb5KLcG1AgA" label="5" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#1"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_lIBMQWY3Eeeyb5KLcG1AgA" label="Req2">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#2"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBcmY3Eeeyb5KLcG1AgA" label="service" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#2"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBc2Y3Eeeyb5KLcG1AgA" label="aaaaaa222" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#2"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBdGY3Eeeyb5KLcG1AgA" label="5" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#2"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_lIBMQmY3Eeeyb5KLcG1AgA" label="Req3">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#3"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lIDBdWY3Eeeyb5KLcG1AgA" label="service" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#3"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDogGY3Eeeyb5KLcG1AgA" label="sdsdsdsdsds" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#3"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDogWY3Eeeyb5KLcG1AgA" label="5" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#3"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_lIBzUGY3Eeeyb5KLcG1AgA" label="Req4">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#4"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lIDogmY3Eeeyb5KLcG1AgA" label="service" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#4"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDog2Y3Eeeyb5KLcG1AgA" label="bbbbbb444" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#4"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIDohGY3Eeeyb5KLcG1AgA" label="3" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#4"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_lIBzUWY3Eeeyb5KLcG1AgA" label="Req5">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#5"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lIDohWY3Eeeyb5KLcG1AgA" label="contrainte" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#5"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIEPkGY3Eeeyb5KLcG1AgA" label="bbbbbb55" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#5"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIEPkWY3Eeeyb5KLcG1AgA" label="3" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#5"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_lIBzUmY3Eeeyb5KLcG1AgA" label="Req6">
+      <target xmi:type="setooling:ControlFlow" href="My.setooling#6"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedLineMappings[name='RequirementLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="_lIEPkmY3Eeeyb5KLcG1AgA" label="contrainte" column="_ef8CzF0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#6"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIEPk2Y3Eeeyb5KLcG1AgA" label="(description)" column="_ef8CzV0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#6"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_lIEPlGY3Eeeyb5KLcG1AgA" label="5" column="_ef8Czl0oEeesG4tohYcUwg">
+        <target xmi:type="setooling:ControlFlow" href="My.setooling#6"/>
+        <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_ef8CzF0oEeesG4tohYcUwg" label="Type" cells="_lICaYGY3Eeeyb5KLcG1AgA _lIDBcmY3Eeeyb5KLcG1AgA _lIDBdWY3Eeeyb5KLcG1AgA _lIDogmY3Eeeyb5KLcG1AgA _lIDohWY3Eeeyb5KLcG1AgA _lIEPkmY3Eeeyb5KLcG1AgA" width="84" featureName="type">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedColumnMappings[name='ReqType']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_ef8CzV0oEeesG4tohYcUwg" label="Description" cells="_lIDBcGY3Eeeyb5KLcG1AgA _lIDBc2Y3Eeeyb5KLcG1AgA _lIDogGY3Eeeyb5KLcG1AgA _lIDog2Y3Eeeyb5KLcG1AgA _lIEPkGY3Eeeyb5KLcG1AgA _lIEPk2Y3Eeeyb5KLcG1AgA" width="108" featureName="description">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedColumnMappings[name='ReqDescription']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_ef8Czl0oEeesG4tohYcUwg" label="Priority" cells="_lIDBcWY3Eeeyb5KLcG1AgA _lIDBdGY3Eeeyb5KLcG1AgA _lIDogWY3Eeeyb5KLcG1AgA _lIDohGY3Eeeyb5KLcG1AgA _lIEPkWY3Eeeyb5KLcG1AgA _lIEPlGY3Eeeyb5KLcG1AgA" width="68" featureName="priority">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']/@ownedColumnMappings[name='ReqPriority']"/>
+    </columns>
+    <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Requirement%20table']"/>
+  </table:DTable>
+  <table:DTable xmi:id="_uQcrUV1uEeeUUaAtPRqBtA" name="new Validation_RF" headerColumnWidth="83">
+    <target xmi:type="setooling:SetoolModel" href="My.setooling#/"/>
+    <lines xmi:type="table:DLine" xmi:id="_KSSkwIzrEeeqNcLhRMPSsw" label="Req1">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#1"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+      <cells xmi:type="table:DCell" xmi:id="_RBF_EIzrEeeqNcLhRMPSsw" label="   X" column="_6ppT8WYyEeeLYNbfCfa0eA">
+        <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.5"/>
+        <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.5"/>
+        <currentStyle xmi:type="table:DCellStyle" xmi:id="_RBF_EYzrEeeqNcLhRMPSsw" labelSize="12">
+          <labelFormat>bold</labelFormat>
+          <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+        </currentStyle>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL0IzrEeeqNcLhRMPSsw" label="Req2">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#2"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+      <cells xmi:type="table:DCell" xmi:id="_KSc80IzrEeeqNcLhRMPSsw" label="   X" column="_6pos4GYyEeeLYNbfCfa0eA">
+        <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.2"/>
+        <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.2"/>
+        <currentStyle xmi:type="table:DCellStyle" xmi:id="_KSeK8IzrEeeqNcLhRMPSsw" labelSize="12">
+          <labelFormat>bold</labelFormat>
+          <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+        </currentStyle>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL0YzrEeeqNcLhRMPSsw" label="Req3">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#3"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL0ozrEeeqNcLhRMPSsw" label="Req4">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#4"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL04zrEeeqNcLhRMPSsw" label="Req5">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#5"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL1IzrEeeqNcLhRMPSsw" label="Req6">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#6"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+      <cells xmi:type="table:DCell" xmi:id="_KSeK8YzrEeeqNcLhRMPSsw" label="   X" column="_6ppT8GYyEeeLYNbfCfa0eA">
+        <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.3"/>
+        <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.3"/>
+        <currentStyle xmi:type="table:DCellStyle" xmi:id="_KSeK8ozrEeeqNcLhRMPSsw" labelSize="12">
+          <labelFormat>bold</labelFormat>
+          <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+        </currentStyle>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_KSTL1YzrEeeqNcLhRMPSsw" label="Req7">
+      <target xmi:type="setooling:RequirementModel" href="My.setooling#7"/>
+      <semanticElements xmi:type="setooling:RequirementModel" href="My.setooling#7"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedLineMappings[name='RequirementLineV']"/>
+      <cells xmi:type="table:DCell" xmi:id="_KSeK84zrEeeqNcLhRMPSsw" label="   X" column="_yNvzwGY0Eee-WZxzZ6CKTw">
+        <target xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.4"/>
+        <semanticElements xmi:type="setooling:Allocation_RF" href="My.setooling#//@allocation_rf.4"/>
+        <currentStyle xmi:type="table:DCellStyle" xmi:id="_KSeK9IzrEeeqNcLhRMPSsw" labelSize="12">
+          <labelFormat>bold</labelFormat>
+          <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+        </currentStyle>
+        <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@intersection.0"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DTargetColumn" xmi:id="_6pos4GYyEeeLYNbfCfa0eA" label="F1" cells="_KSc80IzrEeeqNcLhRMPSsw" width="60">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.0"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.0"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" xmi:id="_6ppT8GYyEeeLYNbfCfa0eA" label="F2" cells="_KSeK8YzrEeeqNcLhRMPSsw" width="60">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.1"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.1"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" xmi:id="_6ppT8WYyEeeLYNbfCfa0eA" label="F3" cells="_RBF_EIzrEeeqNcLhRMPSsw" width="60">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.2"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.2"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" xmi:id="_yNvzwGY0Eee-WZxzZ6CKTw" label="F4" cells="_KSeK84zrEeeqNcLhRMPSsw" width="60">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" xmi:id="_KScVwIzrEeeqNcLhRMPSsw" label="F5" width="60">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.4"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.4"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']/@ownedColumnMappings.0"/>
+    </columns>
+    <description xmi:type="description_2:CrossTableDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='Validation_RF']"/>
+  </table:DTable>
+  <diagram:DSemanticDiagram xmi:id="_VYZzAIzqEeeqNcLhRMPSsw" name="Structure of F4">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VYZzAYzqEeeqNcLhRMPSsw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_VYZzAozqEeeqNcLhRMPSsw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_VYc2UIzqEeeqNcLhRMPSsw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_VYc2UYzqEeeqNcLhRMPSsw" type="Sirius" element="_VYZzAIzqEeeqNcLhRMPSsw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_VYddYIzqEeeqNcLhRMPSsw" type="2001" element="_VYZzA4zqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_VYddY4zqEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_VYddZIzqEeeqNcLhRMPSsw" x="21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_VY6JUIzqEeeqNcLhRMPSsw" type="3002" element="_VYZzBIzqEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_VY6JUYzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VY6JUozqEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_VYddYYzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYddYozqEeeqNcLhRMPSsw" x="78" y="156" width="20" height="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ayrqYIzqEeeqNcLhRMPSsw" type="2001" element="_ayjHgIzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ayrqY4zqEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ayrqZIzqEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ays4iozqEeeqNcLhRMPSsw" type="3001" element="_aymx5IzqEeeqNcLhRMPSsw">
+            <children xmi:type="notation:Node" xmi:id="_aytfkIzqEeeqNcLhRMPSsw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_aytfkYzqEeeqNcLhRMPSsw" x="11" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ayuttozqEeeqNcLhRMPSsw" type="3002" element="_aymx5YzqEeeqNcLhRMPSsw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ayutt4zqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayutuIzqEeeqNcLhRMPSsw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ays4i4zqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ays4jIzqEeeqNcLhRMPSsw" x="-2" y="48" width="10" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ayuGoIzqEeeqNcLhRMPSsw" type="3003" element="_ayjHgYzqEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ayuGoYzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayuGoozqEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ayrqYYzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayrqYozqEeeqNcLhRMPSsw" x="291" y="84" width="169" height="110"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_hKaBcIzqEeeqNcLhRMPSsw" type="2001" element="_hKVwAIzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_hKaogIzqEeeqNcLhRMPSsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_hKaogYzqEeeqNcLhRMPSsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hKaogozqEeeqNcLhRMPSsw" type="3001" element="_hKVwAozqEeeqNcLhRMPSsw">
+            <children xmi:type="notation:Node" xmi:id="_hKaohYzqEeeqNcLhRMPSsw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_hKaohozqEeeqNcLhRMPSsw" x="11" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_hKaoiozqEeeqNcLhRMPSsw" type="3002" element="_hKVwA4zqEeeqNcLhRMPSsw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_hKaoi4zqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hKaojIzqEeeqNcLhRMPSsw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hKaog4zqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hKaohIzqEeeqNcLhRMPSsw" x="-2" y="48" width="10" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hKaoh4zqEeeqNcLhRMPSsw" type="3003" element="_hKVwAYzqEeeqNcLhRMPSsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hKaoiIzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hKaoiYzqEeeqNcLhRMPSsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_hKaBcYzqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hKaBcozqEeeqNcLhRMPSsw" x="288" y="276" width="175" height="109"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_VYc2UozqEeeqNcLhRMPSsw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_oEv9YIzqEeeqNcLhRMPSsw" type="4001" element="_oEsTAIzqEeeqNcLhRMPSsw" source="_VYddYIzqEeeqNcLhRMPSsw" target="_ayrqYIzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_oEv9ZIzqEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oEv9ZYzqEeeqNcLhRMPSsw" x="-2" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oEwkcIzqEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oEwkcYzqEeeqNcLhRMPSsw" x="1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oEwkcozqEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oEwkc4zqEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oEv9YYzqEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oEv9YozqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oEv9Y4zqEeeqNcLhRMPSsw" points="[0, 0, -219, 23]$[193, -21, -26, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oEwkdIzqEeeqNcLhRMPSsw" id="(1.0,0.15)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oEwkdYzqEeeqNcLhRMPSsw" id="(0.15384615384615385,0.4727272727272727)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ovyecIzqEeeqNcLhRMPSsw" type="4001" element="_ovu0EIzqEeeqNcLhRMPSsw" source="_VYddYIzqEeeqNcLhRMPSsw" target="_hKaBcIzqEeeqNcLhRMPSsw">
+          <children xmi:type="notation:Node" xmi:id="_ovzFgIzqEeeqNcLhRMPSsw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ovzFgYzqEeeqNcLhRMPSsw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ovzFgozqEeeqNcLhRMPSsw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ovzFg4zqEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ovzFhIzqEeeqNcLhRMPSsw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ovzFhYzqEeeqNcLhRMPSsw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ovyecYzqEeeqNcLhRMPSsw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ovyecozqEeeqNcLhRMPSsw" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ovyec4zqEeeqNcLhRMPSsw" points="[0, 0, -198, -148]$[198, 148, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ovzFhozqEeeqNcLhRMPSsw" id="(0.6,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ovzFh4zqEeeqNcLhRMPSsw" id="(0.0,0.44036697247706424)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VYZzA4zqEeeqNcLhRMPSsw" name="P1" outgoingEdges="_oEsTAIzqEeeqNcLhRMPSsw _ovu0EIzqEeeqNcLhRMPSsw" width="2" height="2" resizeKind="NSEW">
+      <target xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+      <semanticElements xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" xmi:id="_VYZzBIzqEeeqNcLhRMPSsw" labelSize="1" showIcon="false" labelAlignment="LEFT" strokeSizeComputationExpression="1" backgroundColor="114,73,110">
+        <description xmi:type="style:DotDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer/@nodeMappings[name='FlowPortNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ayjHgIzqEeeqNcLhRMPSsw" name="F4.1.Afficher les informations sur un site dédié " incomingEdges="_oEsTAIzqEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3/@subFunction.0"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3/@subFunction.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_aymx5IzqEeeqNcLhRMPSsw" name="P1" width="1" height="1" resizeKind="NSEW">
+        <target xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+        <semanticElements xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_aymx5YzqEeeqNcLhRMPSsw" labelSize="1" showIcon="false" labelAlignment="LEFT" strokeSizeComputationExpression="4" backgroundColor="114,73,110">
+          <description xmi:type="style:DotDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@borderedNodeMappings[name='FlowPortNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@borderedNodeMappings[name='FlowPortNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_ayjHgYzqEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_hKVwAIzqEeeqNcLhRMPSsw" name="F4.2.Afficher les informations sur une application" incomingEdges="_ovu0EIzqEeeqNcLhRMPSsw" width="8" height="8" resizeKind="NSEW">
+      <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3/@subFunction.1"/>
+      <semanticElements xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3/@subFunction.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_hKVwAozqEeeqNcLhRMPSsw" name="P1" width="1" height="1" resizeKind="NSEW">
+        <target xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+        <semanticElements xmi:type="setooling:FlowPort" href="My.setooling#1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_hKVwA4zqEeeqNcLhRMPSsw" labelSize="1" showIcon="false" labelAlignment="LEFT" strokeSizeComputationExpression="4" backgroundColor="114,73,110">
+          <description xmi:type="style:DotDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@borderedNodeMappings[name='FlowPortNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@borderedNodeMappings[name='FlowPortNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_hKVwAYzqEeeqNcLhRMPSsw" showIcon="false" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@nodeMappings[name='FunctionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_oEsTAIzqEeeqNcLhRMPSsw" sourceNode="_VYZzA4zqEeeqNcLhRMPSsw" targetNode="_ayjHgIzqEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:DataFlow" href="My.setooling#1"/>
+      <semanticElements xmi:type="setooling:DataFlow" href="My.setooling#1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_oEsTAYzqEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_oEsTAozqEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ovu0EIzqEeeqNcLhRMPSsw" sourceNode="_VYZzA4zqEeeqNcLhRMPSsw" targetNode="_hKVwAIzqEeeqNcLhRMPSsw">
+      <target xmi:type="setooling:DataFlow" href="My.setooling#2"/>
+      <semanticElements xmi:type="setooling:DataFlow" href="My.setooling#2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ovu0EYzqEeeqNcLhRMPSsw" targetArrow="InputFillClosedArrow" size="2" strokeColor="253,206,137">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ovu0EozqEeeqNcLhRMPSsw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']/@edgeMappings[name='DataflowEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_VYZzBYzqEeeqNcLhRMPSsw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/org.eclipse.sirius.sample.setooling.design/description/setooling.odesign#//@ownedViewpoints[name='SetoolModel']/@ownedRepresentations[name='FunctionStructure%20Diagram']/@additionalLayers[name='Function']"/>
+    <target xmi:type="setooling:FunctionBlock" href="My.setooling#//@funBs.3"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

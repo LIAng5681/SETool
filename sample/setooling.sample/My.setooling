@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setooling:SetoolModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:setooling="http://www.eclipse.org/sirius/sample/basicfamilysetooling">
+  <reqMs subRequirement="2 4" id="1" priority="5" description="Il faut savoir les informations sur les poubelles collectives"/>
+  <reqMs superRequirement="1" subRequirement="6 3" id="2" priority="5" description=" Il faut savoir les taux de remplissage dans les poubelles collectives " validation="Y" level="1"/>
+  <reqMs superRequirement="2" id="3" priority="5" description=" les poubelles collectives sont dans la zone de surveillance" level="2" type="contrainte"/>
+  <reqMs superRequirement="1" subRequirement="5" id="4" priority="5" description="Il faut  transférer des données sous faible consommation d'énergie" level="1" type="contrainte"/>
+  <reqMs superRequirement="4" id="5" priority="3" description="On peut utiliser IoT" level="2"/>
+  <reqMs superRequirement="2" id="6" priority="5" description="On peut utiliser RPi" validation="Y" level="2"/>
+  <reqMs id="7" description="il a besoin de un site pour afficher les Résultats" validation="Y"/>
+  <funBs id="1" description="Mesurer le taux de remplissage par capteurs" name="F1">
+    <subFunction id="1" description="(description)" level="1" name="F1.1">
+      <subFunction id="1" description="(description)" level="2" name="F1.1.1"/>
+      <subFunction id="2" description="(description)" level="2" name="F1.1.2"/>
+      <flows xsi:type="setooling:DataFlow" id="1" data="Your data"/>
+      <flows xsi:type="setooling:ControlFlow" id="1" flowTarget="//@funBs.0/@subFunction.0/@opers.0" description="(description)"/>
+      <opers xsi:type="setooling:Op_and"/>
+    </subFunction>
+    <subFunction id="2" description="(description)" level="1" name="F1.2"/>
+    <subFunction id="3" description="(description)" level="1" name="F1.3"/>
+    <flows xsi:type="setooling:ControlFlow" id="1" flowTarget="//@funBs.0/@opers.3" flowSource="//@funBs.0/@opers.2" description="(description)"/>
+    <opers xsi:type="setooling:Op_and"/>
+    <opers xsi:type="setooling:Op_or"/>
+    <opers xsi:type="setooling:Op_not"/>
+    <opers xsi:type="setooling:Op_kill"/>
+  </funBs>
+  <funBs id="2" description="Transmettre les informations vers une antenne puis un serveur" name="F2" NumInFlow="3" NumOutFlow="1"/>
+  <funBs id="3" description="Transmettre les ID infos sur capteurs" name="F3"/>
+  <funBs id="4" description="Afficher les informations" name="F4">
+    <subFunction id="1" description="Afficher les informations sur un site dédié " level="1" name="F4.1"/>
+    <subFunction id="2" description="Afficher les informations sur une application" level="1" name="F4.2"/>
+    <flows xsi:type="setooling:DataFlow" id="1" flowTarget="//@funBs.3/@subFunction.0" flowSource="1" data="Your data"/>
+    <flows xsi:type="setooling:DataFlow" id="2" flowTarget="//@funBs.3/@subFunction.1" flowSource="1" data="Your data"/>
+    <flowPorts id="1" name="P1"/>
+  </funBs>
+  <funBs id="5" description="Traiter les informations " name="F5"/>
+  <opers xsi:type="setooling:Op_and"/>
+  <allocation_rf Constraint="" requirement="1"/>
+  <allocation_rf requirement="4"/>
+  <allocation_rf requirement="2" function="//@funBs.0"/>
+  <allocation_rf requirement="6" function="//@funBs.1"/>
+  <allocation_rf requirement="7" function="//@funBs.3"/>
+  <allocation_rf requirement="1" function="//@funBs.2"/>
+  <flows xsi:type="setooling:DataFlow" id="1"/>
+  <flows xsi:type="setooling:DataFlow" id="2"/>
+  <flows xsi:type="setooling:DataFlow" id="3"/>
+  <flows xsi:type="setooling:ControlFlow" id="1"/>
+  <flows xsi:type="setooling:DataFlow" id="4"/>
+  <flows xsi:type="setooling:DataFlow" id="5"/>
+  <flows xsi:type="setooling:DataFlow" id="6"/>
+  <flows xsi:type="setooling:DataFlow" id="7"/>
+  <flows xsi:type="setooling:DataFlow" id="8"/>
+  <flows xsi:type="setooling:ControlFlow" id="2"/>
+  <flows xsi:type="setooling:ControlFlow" id="3"/>
+  <flows xsi:type="setooling:ControlFlow" id="4"/>
+  <flows xsi:type="setooling:ControlFlow" id="5"/>
+  <flows xsi:type="setooling:ControlFlow" id="6"/>
+  <flows xsi:type="setooling:ControlFlow" id="7"/>
+  <flows xsi:type="setooling:ControlFlow" id="8" description="(description)"/>
+  <flows xsi:type="setooling:DataFlow" id="9" data="Your data"/>
+  <flows xsi:type="setooling:DataFlow" id="10" data="Your data"/>
+  <flows xsi:type="setooling:ControlFlow" id="9" description="stop"/>
+  <flows xsi:type="setooling:ControlFlow" id="10" description="(description)"/>
+  <flows xsi:type="setooling:DataFlow" id="11" data="Your data"/>
+  <flows xsi:type="setooling:DataFlow" id="15" flowTarget="//@funBs.1" flowSource="//@funBs.0" data="Your data"/>
+  <flows xsi:type="setooling:ControlFlow" id="12" flowTarget="//@opers.0" flowSource="//@funBs.2" description="(description)"/>
+  <flows xsi:type="setooling:ControlFlow" id="13" flowTarget="//@opers.0" flowSource="//@funBs.1" description="(description)"/>
+  <flows xsi:type="setooling:ControlFlow" id="14" flowTarget="//@funBs.4" flowSource="//@opers.0" description="(description)"/>
+  <flows xsi:type="setooling:DataFlow" id="13" flowTarget="//@funBs.3" flowSource="//@funBs.4" data="Your data"/>
+  <flows xsi:type="setooling:DataFlow" id="14" flowSource="//@funBs.4" data="Your data"/>
+  <flows xsi:type="setooling:DataFlow" id="15" flowTarget="//@funBs.4" flowSource="//@funBs.1" data="Your data"/>
+</setooling:SetoolModel>
